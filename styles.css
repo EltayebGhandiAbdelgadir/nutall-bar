@@ -1,0 +1,75 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+header.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+header.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.about, .social-media {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: red;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 3000px;
+    margin: 0 auto; /* Center the icons container */
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header.hero .hero-text {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header.hero .hero-text {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+
+    .about, .social-media {
+        padding: 0 10px;
+    }
+}
